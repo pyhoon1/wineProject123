@@ -24,7 +24,7 @@ public class UserController {
 
 	@RequestMapping("/loginForm.do")
 	public String loginForm() {
-		return "loginForm";
+		return "user/loginForm";
 	} 
 
 	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
@@ -58,6 +58,8 @@ public class UserController {
 	public String joinForm() {
 		return "joinForm";
 	}
+
+
 
 	@RequestMapping(value = "/join.do", method = RequestMethod.POST)
 	public String insertUser(Model model, @RequestParam("loginId") String loginId,

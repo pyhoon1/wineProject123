@@ -17,7 +17,7 @@ import user.service.UserService;
 import user.vo.User;
 
 @Controller
-public class UserController {
+public class UserController { 
 
 	@Autowired
 	private UserService userService;
